@@ -3068,7 +3068,7 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
     color: #fff;
 }
 
-.linkflair-talks .linkflairlabel {
+.linkflair-talk .linkflairlabel {
     background-color: #f85d5d;
     color: #fff;
 }
@@ -3079,7 +3079,7 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 }
 
 .linkflair-discussion .linkflairlabel {
-    background-color: #818ad5;
+    background-color: #622DB2;
     color: #fff;
 }
 
