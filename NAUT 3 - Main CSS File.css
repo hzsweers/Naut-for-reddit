@@ -3063,18 +3063,23 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 
 /* --- Addon: Flairs --- */
 
-.linkflair-mod .linkflairlabel {
-    background-color: #65B354;
+.linkflair-news .linkflairlabel {
+    background-color: #262626;
     color: #fff;
 }
 
-.linkflair-mod .linkflairlabel {
-    background-color: #65B354;
+.linkflair-talks .linkflairlabel {
+    background-color: #f85d5d;
     color: #fff;
 }
 
 .linkflair-library .linkflairlabel {
-    background-color: #f85d5d;
+    background-color: #60A969;
+    color: #fff;
+}
+
+.linkflair-discussion .linkflairlabel {
+    background-color: #818ad5;
     color: #fff;
 }
 
