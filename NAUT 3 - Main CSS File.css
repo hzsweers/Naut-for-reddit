@@ -2996,3 +2996,139 @@
 
 
 ==================================================================================================================================*/
+
+/* This disables the page load animation */
+.listing-page .sitetable, .search-page .sitetable, .top-page .menuarea .spacer, .organic-listing {
+    animation-name: none;
+    -webkit-animation-name: none;
+}
+
+/* --- Addon: Text Strings --- */
+/* This is the info shown above the submission fields */
+.submit-page .infobar:before {content: "Please submit insightful content that allows for discussion!";}
+/* --- End Addon --- */
+
+/* --- Addon: Header Color (Primary Color) --- */
+/* Not visible once the banner appears, but nice to have as a fallback. This also makes the logo still look good while waiting for the banner (because the logo has some black in it too... oops) */
+.content:before {background-color: #111111}
+/* --- End Addon --- */
+
+/* --- Addon: Button color (Secondary Color) --- */
+.morelink, .titlebox .fancy-toggle-button .add, .morelink:after, .content .infobar,
+.submit-page #newlink.submit.content .tabmenu.formtab .selected a, .submit-page .infobar, 
+.submit-page #newlink.submit.content .btn, .drop-choices a.choice:hover, .linkflairlabel, .fancy-toggle-button .remove:active
+.expando-button:hover, .top-page .content .menuarea .dropdown.lightdrop .selected, .expando-button:hover, .side .titlebox .md h3 a,
+.res div.RES-keyNav-activeElement, .res div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed, .btn, button {background-color: #258AAF}
+
+    /* Hover color = lighter overlay color */
+    .morelink:hover, .submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover, .btn:hover, button:hover,
+    .side .titlebox .md h3 a:hover, .titlebox .fancy-toggle-button .add:hover, .titlebox .fancy-toggle-button .add:hover:after
+     {background-color: #2693B9;}
+
+    /* Active color = darker overlay color */
+    .morelink:active, .side .titlebox .md h3 a:active, .btn:active, button:active {background-color: #25769B;}
+
+/* --- End Addon --- */
+
+/* --- Addon: Link Color (Tertiary Color) - Same as the secondary color, 
+or to the secondary color. Else the page will become too busy.-- */
+a, .link .entry .buttons li a.comments, .md a, .titlebox .tagline a.flairselectbtn, 
+.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, 
+body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .entry .buttons li a:hover, 
+.link .entry .buttons li a.flairselectbtn, .comment .flat-list li a[onclick*="reply"], 
+.comment .flat-list li a:hover, .tagline .submitter, .tagline .submitter, .side:after, 
+.usertext .bottom-area a.reddiquette, .side .titlebox .md h6 a, .link .entry .tagline a:hover, .comment .author:hover
+ {color: #258AAF;}
+/* --- End Addon --- */
+
+/* --- Addon: Header Background Image --- */
+.content:before {height: 416px; background: #393D41 url(%%headerimg%%) fixed no-repeat 33% 0}
+    @media only screen and (min-width : 1921px) {.content:before {background-size: cover;}}
+
+        /* Add or subtract THE SAME AMOUNT ON EACH OF THESE */
+.content                        {margin-top:        342px;} 
+.side                           {margin-top:        446px;} 
+.search-page .side              {margin-top:        394px;} 
+.comments-page .side            {margin-top:        558px;}
+.res .comments-page .side       {margin-top:        572px;}
+.comments-page .side .linkinfo  {margin-top:        246px;} 
+#search, .search-page .morelink {top:               342px;} 
+.morelink                       {top:               394px;}
+#header-bottom-left             {top:               278px;}
+
+#header .tabmenu li a, .pagename a {text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);}
+#header .tabmenu li a:hover, .pagename a:hover {background-color: rgba(0, 0, 0, 0.12);}
+
+/* --- End Addon --- */
+
+/* --- Addon: Flairs --- */
+
+.linkflair-mod .linkflairlabel {
+    background-color: #65B354;
+    color: #fff;
+}
+
+.linkflair-mod .linkflairlabel {
+    background-color: #65B354;
+    color: #fff;
+}
+
+.linkflair-library .linkflairlabel {
+    background-color: #f85d5d;
+    color: #fff;
+}
+
+/* --- End addon --- */
+
+/* --- Message the mod button --- */
+  
+.sidecontentbox a.helplink {    
+    margin-right: 27px;    
+    margin-bottom: 15px;    
+    width: 80%;    
+    background-color:#258AAF;                     /*(Primary Color/Static)*/
+    border: none;    
+    border-radius: 2px;    
+    color: #fff!important;    
+    text-align: center;    
+    font-weight: 700;    
+    font-size: 13px;    
+    font-family: Arial,sans-serif;    
+    line-height: 30px;    
+    transition: .25s ease    
+}    
+.sidecontentbox a.helplink:hover {    
+    background-color: #2693B9;                    /*(Secondary Color/Hover)*/
+    text-decoration:none;    
+}    
+.sidecontentbox a.helplink:active {    
+    background-color: #25769B;                    /*(Tertiary Color/Pressed)*/
+}    
+
+/* --- End --- */
+
+/* ADDON: CUSTOM LOGO */
+
+#header .pagename a {padding:0;position:absolute;text-indent:-9999px;margin:0;top:-278px;background:url(%%logo%%);background-position:0 0;background-repeat:no-repeat;}
+#header .pagename a:hover {background-color:transparent;}
+
+/* Center Logo */
+#header-bottom-left {width: calc( 100% - 32px);}
+#header .pagename {width:100%;display:block;position:absolute;top:-278px;z-index: -1;}
+.submit-page #header .pagename {top: -36px;}
+#header .pagename a {position:relative;display:block;top:0;margin-left: auto;margin-right: auto;}
+/* END CENTER */
+#header .pagename a {
+    margin-top:    50px; /* Space from top */
+    left:          0;     /* Space from left */
+    width:         152px; /* Width of image */
+    height:        179px;  /* Half the height of your image */
+}
+/* END ADDON */
+
+/* ADDON: White hover on tabmenu */
+#header .tabmenu li a:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0.1);
+}
+/* END ADDON */
