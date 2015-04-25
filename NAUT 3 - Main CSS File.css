@@ -3042,7 +3042,7 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 /* --- End Addon --- */
 
 /* --- Addon: Header Background Image --- */
-.content:before {height: 294px; background: #393D41 url(%%headerimg%%) fixed no-repeat 33% 0}
+.content:before {height: 270px; background: #393D41 url(%%headerimg%%) fixed no-repeat 33% 0}
     @media only screen and (min-width : 1921px) {.content:before {background-size: cover;}}
 
         /* Add or subtract THE SAME AMOUNT ON EACH OF THESE */
@@ -3115,14 +3115,14 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 /* ADDON: CUSTOM LOGO */
 .side .md h6 a:last-of-type {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 50%;
     margin-left: -76px;
     font-size: 0;
-    width: 68px;
-    height: 80px;
+    width: 102px;
+    height: 120px;
     display: block;
-    background: url(%%logo-small%%) no-repeat;
+    background: url(%%logomedium%%) no-repeat;
     z-index: 1;
     background-position: center;
 }
