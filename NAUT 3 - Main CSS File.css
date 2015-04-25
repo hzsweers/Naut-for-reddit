@@ -3042,19 +3042,19 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
 /* --- End Addon --- */
 
 /* --- Addon: Header Background Image --- */
-.content:before {height: 416px; background: #393D41 url(%%headerimg%%) fixed no-repeat 33% 0}
+.content:before {height: 294px; background: #393D41 url(%%headerimg%%) fixed no-repeat 33% 0}
     @media only screen and (min-width : 1921px) {.content:before {background-size: cover;}}
 
         /* Add or subtract THE SAME AMOUNT ON EACH OF THESE */
-.content                        {margin-top:        342px;} 
-.side                           {margin-top:        446px;} 
-.search-page .side              {margin-top:        394px;} 
-.comments-page .side            {margin-top:        558px;}
-.res .comments-page .side       {margin-top:        572px;}
-.comments-page .side .linkinfo  {margin-top:        246px;} 
-#search, .search-page .morelink {top:               342px;} 
-.morelink                       {top:               394px;}
-#header-bottom-left             {top:               278px;}
+.content                        {margin-top:        222px;}
+.side                           {margin-top:        326px;}
+.search-page .side              {margin-top:        274px;}
+.comments-page .side            {margin-top:        438px;}
+.res .comments-page .side       {margin-top:        452px;}
+.comments-page .side .linkinfo  {margin-top:        126px;}
+#search, .search-page .morelink {top:               222px;}
+.morelink                       {top:               274px;}
+#header-bottom-left             {top:               158px;}
 
 #header .tabmenu li a, .pagename a {text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);}
 #header .tabmenu li a:hover, .pagename a:hover {background-color: rgba(0, 0, 0, 0.12);}
@@ -3119,10 +3119,10 @@ body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .ent
     left: 50%;
     margin-left: -76px;
     font-size: 0;
-    width: 152px;
-    height: 179px;
+    width: 68px;
+    height: 80px;
     display: block;
-    background: url(%%logo%%) no-repeat;
+    background: url(%%logo-small%%) no-repeat;
     z-index: 1;
     background-position: center;
 }
